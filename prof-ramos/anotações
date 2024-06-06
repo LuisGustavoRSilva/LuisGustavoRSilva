@@ -1,0 +1,67 @@
+anotações e pesquisa da aula sobre redes e infroestrutura
+
+Protocolo = o protocolo  é o conjunto de regras e converções que permitem a comunicação entre dispositivos em uma rede. esses protocolos definem como os dados são formatados, transmitidos e recebidos, garantindo que 
+diferentessistemas e dispositivos possam interagir de maneira eficiente e segura
+
+IP = IP ( Internet Protocol) é um conjunto de regras que governam o formato dos dados enviados pela internet ou por uma rede local. ele é um componente fundamental da suité de procotolos TCP/IP, que é a base da internet e de
+muitas redes privadas
+
+TCP-IP = TCP-IP (Transmission Control Protocol/Internet Protocol) é um conjunto de procolos de comunicação utilizada para interligar dispositivos em redes de computadores, incluindo a internet. ele define como os dados são
+enviados, recebidos e interpretados, garantindo a comunicação entre dispositivos.
+
+Pacotes Novell = O termo "Pacote Novell" refere-se aos protocolos e serviços associados ao NetWare, um sistema operacional de rede desenvolvido pela Novell, Inc.NetWare foi muito popular nas décadas de 1980 e 1990 para redes
+locais (LANs). eles fornecia uma série de serviços de rede, incluindo compartilhamentode arquivos e impressoras, além de gerenciamento de rede
+
+Pacotes Apple = Os Pacotes Apple são os protocolos e serviços desenvolvidos pela Apple Inc. para uso em suas redes de computadores e dispositivos . Apple criou uma variedade de protocolos e tecnologias para facilitar a
+comunicação e a integração entre seus dispositivos e redes
+
+ICMP = ICMP (Internet Control Message Protocol) é um protocolo da camada de rede usado para enviar mensagens de controle e de erro entre dispositivos em uma rede. ela é parte integrante da suité de protocolos TCP/IP
+
+Ping da Morte = O ping da amorte é um ataque clássico de DoS que explorava vulnerabilidade no tratamento de pacotes ICMP (Internet Control Message Protocol) grandes em sistemas antigos. Embora menos comum hoje devido a
+melhorias de segurança, ele destaca a importância de manter sistemas atualizados e de implementar medidas de segurança robustas.
+
+Interface de Rede = Uma interface de rede é um ponto de conexão entre dispositivos e uma rede de computadores, permitindo a comunicação e troca de dados. elas podem ser físicas como placas de rede (NICs), ou virtuais, como
+interfaces de lootback ou VLANs.
+
+LAN, WAN, MAN, RAN, CAN, PAN, SAN, WLAN = 
+
+LAN = LAN ou Local Area Network é uma rede de computadores que conecta dispositivos em uma área geografica limitada, como uma residencia, um escritorio, um predio ou um cmapus. As LANs são usadas para permitir a comunicação
+e o compartilhamento de recursos.
+
+WAN = WAN ou Wide Area Network é uma rede de computadores que conecta dispositivos em uma área geografica dispersa, abnragendo grandes distancias geograficas, como cidades, países ou até mesmo continentes. As WANs são
+usados para permitir comunicação entre locais distantes e o acesso a recursos compartilhados, como dados e aplicativos.
+
+MAN = MAN ou Metropolitan Area Network é uma rede de computadores que abrange uma área geografica maior que uma LAN, geralmente cobrindo uma cidade ou uma região metropolitana. Essas redes são usadas para conectar vários
+locais dentro de uma área geografica especifica, fornecendo serviços de comunicação de dados para empresas, organizações e instituições governamentais
+
+RAN = RAN ou Radio Access Network é parte de uma arquitetura de rede de teleocmunicação que fornece conectividade sem fio entre dispositivos móveis, como smartphones, tablets e dispositivos IoT, e a infraestrutura de rede
+central. A RAN consiste em estações base e equipamentos de rádio que permitem comunicação sem fio entre dispositivos móveis e a rede principal.
+
+CAN = CAN ou Controller Area Network, que é um protocolo de comunicação serial usado principalmente em sistemas embarcadospara comunicação entre microcontroladores e dispositivos periféricos em veiculos automotivos e
+outras aplicações industriais. Este protocolo permite a troca de mensagens entre dispositivosconectados a uma linha de barramento comum.
+
+PAN = Personal Area Network, é uma rede de comunicação sem fio que conecta dispositivos eletronicos próximos a uma pessoa, gerlamente dentro de um raio de alguns metros. exemplos comuns de uma conexão na rede PAN são
+smartphones, laptops, tablets, fones de ouvido bluetooth e dispositivos inteligentes domesticos. essa rede é muitas vezes criada usando tecnologias como bluetooth, wi-fi ou infravermelho
+
+SAN = SAN ou Storage Area Network, é uma rede especializada de alta velocidade que conecta servidores a dispositivos de armazenamento de dados, como arrays de discos e sistemas de armazenamento em rede. A SAN permite
+que os servidores acessem e compartilhemfacilmente os recusos de armazenamentos, melhorando a disponibilidade, escalabidade e desempenho do armazenamento de dados.
+
+WWLAN = WLAN ou Wireless Local Area Network é uma rede de comunicação sem fio que permite dispositivos dentro de uma área limitada se conectem á rede e compartilhemrecursos, como acesso á internet e impressoras,
+sem a necessidade de cabos fisicos. as WLANs são comumente usadas em ambientes domésticos, empresasariais e públicos, e são implementadas usando tecnologia como WI-FI
+
+Diferenças entre LAN e WAN em relação ao Hardware e Largura de Banda = a diferença da LAN e WAN é a escala geografica e tecnologias que elas atuam. a LAN atua em um espaço geografico menor, como residencias,
+escritorios ou cmapus. já a WAN é uma rede de longa distancia que abrange uma área geografica mais ampla, como uma cidade, país ou até memso continente. as LANS atuam em alta velocidade e baixa latencia já as WANS tem seu
+foco em longas distancias.
+
+resumindo, enquanto as LANS são redes locais que operam em áreas geograficas limitadas e usam hardware de rede de alta velocidade, as WANS são redes de longa distancia que conectam várias LANs e usam uma variedade de
+tecnologia e infraestrutura para suportar comunicações de longa distancia
+
+Colisão (CSMA-CD) = CSMA-CD pu Carrier Sense Multiple Acess with Collision Detection, é um protocolo usado em redes Ethernet com topologia de barramento para controlar o acesso ao meio ocmpartilhado, ele é especialmente
+importante em redes Ethernet como topologia de barramento, onde vários dispositivos compartilham o memso cabo de transmissão. ele ajuda a evitarque os dados sejam corrompidos devido a colisões, garantindo que apenas
+um dispositivo transmita de cada vez.
+
+HUB = Um HUB é um dispositivo de rede que atua como um ponto central deconexãopara dispositivos em uma rede local (LAN). ele é usado para conectar múltiplos dispositivos em uma LAN, permitindo que eles se comuniquem entre
+si. porém ele não é mais utilizado nos dias de hoje!
+
+Switch = Um switch é um dispositivo de rede utilizado em redes de computadores para interconectar dispositivos, como computadores, servidores, impressoras, e outros dispositivos de rede. ele opera na camada enlace de dados
+do modelo OSI e é projetado para encaminhar pacote de dados de forma eficiente dentro de uma rede local (LAN)
