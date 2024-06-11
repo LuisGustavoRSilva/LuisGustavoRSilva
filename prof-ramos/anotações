@@ -53,15 +53,70 @@ Diferenças entre LAN e WAN em relação ao Hardware e Largura de Banda = a dife
 escritorios ou cmapus. já a WAN é uma rede de longa distancia que abrange uma área geografica mais ampla, como uma cidade, país ou até memso continente. as LANS atuam em alta velocidade e baixa latencia já as WANS tem seu
 foco em longas distancias.
 
-resumindo, enquanto as LANS são redes locais que operam em áreas geograficas limitadas e usam hardware de rede de alta velocidade, as WANS são redes de longa distancia que conectam várias LANs e usam uma variedade de
-tecnologia e infraestrutura para suportar comunicações de longa distancia
+resumindo, enquanto as LANS são redes locais que operam em áreas geograficas limitadas e usam hardware de rede de alta velocidade, as WANS são redes de longa distancia que
+conectam várias LANs e usam uma variedade de tecnologia e infraestrutura para suportar comunicações de longa distancia
 
-Colisão (CSMA-CD) = CSMA-CD pu Carrier Sense Multiple Acess with Collision Detection, é um protocolo usado em redes Ethernet com topologia de barramento para controlar o acesso ao meio ocmpartilhado, ele é especialmente
-importante em redes Ethernet como topologia de barramento, onde vários dispositivos compartilham o memso cabo de transmissão. ele ajuda a evitarque os dados sejam corrompidos devido a colisões, garantindo que apenas
-um dispositivo transmita de cada vez.
+Colisão (CSMA-CD) = CSMA-CD pu Carrier Sense Multiple Acess with Collision Detection, é um protocolo usado em redes Ethernet com topologia de barramento para controlar o
+acesso ao meio ocmpartilhado, ele é especialmente importante em redes Ethernet como topologia de barramento, onde vários dispositivos compartilham o memso cabo de transmissão.
+ele ajuda a evitarque os dados sejam corrompidos devido a colisões, garantindo que apenas um dispositivo transmita de cada vez.
 
-HUB = Um HUB é um dispositivo de rede que atua como um ponto central deconexãopara dispositivos em uma rede local (LAN). ele é usado para conectar múltiplos dispositivos em uma LAN, permitindo que eles se comuniquem entre
-si. porém ele não é mais utilizado nos dias de hoje!
+HUB = Um HUB é um dispositivo de rede que atua como um ponto central deconexãopara dispositivos em uma rede local (LAN). ele é usado para conectar múltiplos dispositivos
+em uma LAN, permitindo que eles se comuniquem entre si. porém ele não é mais utilizado nos dias de hoje!
 
-Switch = Um switch é um dispositivo de rede utilizado em redes de computadores para interconectar dispositivos, como computadores, servidores, impressoras, e outros dispositivos de rede. ele opera na camada enlace de dados
-do modelo OSI e é projetado para encaminhar pacote de dados de forma eficiente dentro de uma rede local (LAN)
+Switch = Um switch é um dispositivo de rede utilizado em redes de computadores para interconectar dispositivos, como computadores, servidores, impressoras, e outros
+dispositivos de rede. ele opera na camada enlace de dados do modelo OSI e é projetado para encaminhar pacote de dados de forma eficiente dentro de uma rede local (LAN)
+
+Router = Um router é um dispositivo de rede que direciona pacotes de dados entre redes de computadores, permitindo a comunicação eficiente e a conexão com a internet.
+ele desempenha um papel funcamental na infraestrutura facilitando a troca de informações e garantindo que os dados chegem no destino coorreto
+
+Oque acontece quando o oruter não conhece o caminho == quando um roteador não conhece o caminho para um destino especifico, ele pode adotar diferentes abordagens,
+dependendo de sua configuração e das políticas de rede.
+
+Oque acontece quando um pacote não chega no destino == quando um pacote não chega no destino na rede, várias ações e consequências podem correr, dependendo da causa
+do problema e da configuração da rede.
+
+TCP = o TCP (Transmission Control Protocol) é um dos principais protocolos da camada de transporte no modelo de rede TCP/IP. ele desempenha um papel crucial na
+infraestrutura informatica, proporcionando comunicação confiavel e ordena entre dispositivos em uma rede.
+
+UDP = O UDP (User Datagram Protocol) é um protocolo da camada de transporte no modelo de rede TCP/IP, que, ao contrario do TCP, oferece um serviço de comunicação
+simples e sem conexão.
+
+Proxy = um Proxy é um servidor intermediário que atua como um ponto de comunicação entre cliente (como navegar pela internet) e outro servidor (como um servidor web). Na
+infraestrutura, os proxies desempenham várias funções importantes
+
+Funções do proxy == as funções do proxy são: Controle de Acesso; Segurança; Cache; Anônimato; Filtragem de conteúdo; Bypass de restrições geograficas
+
+Firewall = Firewall é um sistema de segurança de rede que monitora e controla o tráfego de rede, com base em regras de segurança predefinidas. Na infraestrutura, o firewall
+é essencial para proteger redes e dispositivos contra acessos não autorizados e ataques cibernéticos. Ele pode ser implementado em hardware, software, ou uma combinação de ambos.
+
+Portas = no contexto da infraestrutura, as portas referem-se a pontos de acesso virtuais que permitem a comunicação entre dispositivos na rede. Cada porta é identificada por
+um número, que vai de 0 a 65535, e é usada para diferenciar tipos específicos de tráfego de rede.
+
+portas 80, 110, 25, 21, 23
+
+PORTA 80: Protocolo = HTTP
+          Uso = é a porta padrão para tráfego web não seguro. Quando você acessa um site começando com "http://" seu navegador esta comunicando com o servidor web na porta 80.
+          Função = facilita a tranferencia de páginas web e outros conteúdos pela internet.
+
+PORTA 110: Protocolo = POP3 (Post Office Protocol verison 3)
+           Uso = Utiliza para receber emails de um servidor email. o POP3 é um dos protocolos mais antigos para acessar mensagens do email, geralmente baixando as
+           mensagens para o cliente de email e removendo-as do servidor.
+           Função = Recepção de emails, permitindo que os usuários acessem suas mensagens de email
+
+PORTA 25: Protocolo = SMTP (Simple Mail Tranfer Protocol)
+          Uso = porta padrão para envio de emails. utilizada por servidores de emails para enviar mensagens entre servidores e para enviar emails dos clientes para o servidor
+          de email.
+          Função = envio de emails, crucial para a comunicação entre servidores de email na entrega de mensagens.
+
+PORTA 21: Protocolo = FTP (File Transfer Protocol)
+          Uso = Utilizada para tranferência de arquivos entre um cliente e um servidor. o FTP permite que os usuários enviem e recebam arquivos de um servidor remoto.
+          Função = Tranferência de arquivos, frequentemente usada para upload e download de arquivos em servidores web e outros servidores
+
+PORTA 23: Protocolo = Telnet
+          Uso = Utilizando para comunicação remota e gerenciamento de um dispositivo de rede. telnet permite aos usuarios se conectarem a dispositivos remotos para gerenciamento
+          e configuração
+          Função = Acesso remoto a dispositivos de rede. no entando, como telnet não é seguro (dados são transmitidos em texto claro), foi amplamente substituido por SSH (Secure Shell),
+          que oferece criptografia.
+
+DNS = DNS (Domains Name System) é um sistema fundamental na infraestrutura informática que traduz nomes de domínio legíveis por humanos (como www.example.com) em endereços IP (como
+192.0.2.1), que são usados pelos computadores para identificar e se comunicar com outros dispositivos na rede.
