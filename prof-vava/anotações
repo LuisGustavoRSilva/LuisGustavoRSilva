@@ -25,3 +25,5 @@ no ipv6 pode existir 2 igual
 rede sem fio é a rede mais simples que tem, porém a mais complexa que existe porque não é possivel ver ela
 
 desafio de conectar 1 celular e 1 noteboock em cada rede, 1  celular e noteboock na rede 2.4GHz e 1 celular e noteboock na rede 5.0GHz
+
+sempre utilizar na forma static e qualquer equipamento que fornece serviço na rede. Todo e qualquer usuario pode utilizar o metodo dinamico (DHCP)
