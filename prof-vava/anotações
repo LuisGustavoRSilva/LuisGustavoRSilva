@@ -27,3 +27,10 @@ rede sem fio é a rede mais simples que tem, porém a mais complexa que existe p
 desafio de conectar 1 celular e 1 noteboock em cada rede, 1  celular e noteboock na rede 2.4GHz e 1 celular e noteboock na rede 5.0GHz
 
 sempre utilizar na forma static e qualquer equipamento que fornece serviço na rede. Todo e qualquer usuario pode utilizar o metodo dinamico (DHCP)
+
+DNS = DNS ou Sintema de nomes de dominios (Domains Name System), é uma infraestrutura essencial para o funcionario da internet, Ele serve como uma espécie de "catálogo"
+telefônico" que traduz nomes de domínios legíveis por humanos (como www.exemplo.com) em endereços IP numéricos (como 192.0.2.1) que são usados pelos computadores para localizar
+e comunicar-se com outros dispositivos na rede.
+
+A = TIPO DE REGISTRO ONDE O TIPO DE REGISTRO IP É IPV4
+AAAA = TIPO DE REGISTRO QUE O INDEREÇO IP É IPV6
