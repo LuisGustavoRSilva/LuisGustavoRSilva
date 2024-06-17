@@ -34,3 +34,7 @@ e comunicar-se com outros dispositivos na rede.
 
 A = TIPO DE REGISTRO ONDE O TIPO DE REGISTRO IP É IPV4
 AAAA = TIPO DE REGISTRO QUE O INDEREÇO IP É IPV6
+
+todo switch tem uma opção padrão de VLAN (Virtual | rede local virtual) a VLAN existiu para interligar vários marcas e tipos de dispositivos
+
+sempre é bom criar as vlanz e associar aonde é trabalhado
