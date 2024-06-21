@@ -1,0 +1,18 @@
+enable
+    show interface brief
+
+
+
+    configure temrinal
+        interafce range GigabitEthernet 1/0/10 - 12
+            description Interfaces de servidores
+            switchport mode access
+            switchport nonegotiate 
+            switchport access vlan 20
+            exit
+        interafce GigabitEthernet 1/0/23
+            description Interfaces de wireless
+            switchport mode access
+            switchport nonegotiate 
+            switchport access vlan 30
+            exit
