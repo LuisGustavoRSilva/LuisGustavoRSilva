@@ -1,1 +1,64 @@
-a
+dispotivos finais são todos que estão conectados
+ethernet é protocole, fastethernet é velocidade
+a regra de servidor é que o servidor sempre tem q ter uma velocidade maior que os dispositivos finais
+wan é tudo aquilo que não pode ser mechido,alterado ou modificado
+TCP/IP tudo com a letra P significa protocolo
+
+
+aula 22/05/24
+switch apartir do momento que tirar da caixa e colocar os cabos esta funcionando
+SVI = Switch virtual interface
+por padrão roteador corporativo é total desligado, e não configurado
+CLI = Traduzido interface de linha de comando
+
+não pode exisir 2 mac address igual na rede
+não pode existir 2 ipv4 igual na rede
+não pode existir 2 hostname igual
+
+no ipv6 pode existir 2 igual
+
+rede sem fio é a rede mais simples que tem, porém a mais complexa que existe porque não é possivel ver ela
+
+desafio de conectar 1 celular e 1 noteboock em cada rede, 1  celular e noteboock na rede 2.4GHz e 1 celular e noteboock na rede 5.0GHz
+
+dispotivos finais são todos que estão conectados
+ethernet é protocole, fastethernet é velocidade
+a regra de servidor é que o servidor sempre tem q ter uma velocidade maior que os dispositivos finais
+wan é tudo aquilo que não pode ser mechido,alterado ou modificado
+TCP/IP tudo com a letra P significa protocolo
+
+
+aula 22/05/24
+switch apartir do momento que tirar da caixa e colocar os cabos esta funcionando
+SVI = Switch virtual interface
+por padrão roteador corporativo é total desligado, e não configurado
+CLI = Traduzido interface de linha de comando
+
+
+aula 03/06/24
+
+
+
+não pode exisir 2 mac address igual na rede
+não pode existir 2 ipv4 igual na rede
+não pode existir 2 hostname igual
+
+no ipv6 pode existir 2 igual
+
+rede sem fio é a rede mais simples que tem, porém a mais complexa que existe porque não é possivel ver ela
+
+desafio de conectar 1 celular e 1 noteboock em cada rede, 1  celular e noteboock na rede 2.4GHz e 1 celular e noteboock na rede 5.0GHz
+
+sempre utilizar na forma static e qualquer equipamento que fornece serviço na rede. Todo e qualquer usuario pode utilizar o metodo dinamico (DHCP)
+
+DNS = DNS ou Sintema de nomes de dominios (Domains Name System), é uma infraestrutura essencial para o funcionario da internet, Ele serve como uma espécie de "catálogo"
+telefônico" que traduz nomes de domínios legíveis por humanos (como www.exemplo.com) em endereços IP numéricos (como 192.0.2.1) que são usados pelos computadores para localizar
+e comunicar-se com outros dispositivos na rede.
+
+A = TIPO DE REGISTRO ONDE O TIPO DE REGISTRO IP É IPV4
+AAAA = TIPO DE REGISTRO QUE O INDEREÇO IP É IPV6
+
+todo switch tem uma opção padrão de VLAN (Virtual | rede local virtual) a VLAN existiu para interligar vários marcas e tipos de dispositivos
+
+sempre é bom criar as vlanz e associar aonde é trabalhado
+
