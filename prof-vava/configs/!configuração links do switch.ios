@@ -1,0 +1,27 @@
+!configuração links do switch 3650 (distribuição)
+
+enable
+    configure terminal 
+        interface range GigabitEthernet 1/0/1 - 2
+            channel-group 1 mode active
+            exit
+        interface Port-Channel 1
+        description Protocolo LACP Switch 3050 para o 2960
+        switchport mode trunk 
+        switchport trunk allowed vlan all
+        end
+write 
+
+!switch 2960
+
+enable
+    configure terminal
+        interface range GigabitEthernet 0/1 - 2
+            channel-group 1 mode passive
+            exit
+        interface port-channel 1
+        description protocolo LACP 2960 para o 3650
+        switchport mode trunk
+        switchport trunk allowed vlan all
+        end
+write 

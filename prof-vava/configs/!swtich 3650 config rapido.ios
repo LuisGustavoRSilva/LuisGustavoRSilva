@@ -1,0 +1,14 @@
+!swtich 3650 config rapido
+
+enable
+    configure terminal
+        spanning-tree vlan 1-60 root primary
+        spanning-tree mode rapid-pvst
+    end
+write
+
+!switch 2960 
+
+enable
+    configure terminal
+    spanning-tree mode rapid-pvst
