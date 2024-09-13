@@ -8,7 +8,7 @@ pwd (verificar o diretório atual)
 reboot (reiniciar o servidor)
 exit (deslogar)
 
-____________________________________________
+_____________________________________________________________________________________________________________________________________________________________________________
 Personalização do servidor:
 1) apt install linuxlogo
 2) cd /etc  (etc diretório de configurações no Linux)
@@ -17,7 +17,7 @@ Personalização do servidor:
 5) Remover o arquivo issue (rm issue)
 6) Renomear o arquivo issue (cp issue.linuxlogo issue) 
 
-________________________________________________
+_____________________________________________________________________________________________________________________________________________________________________________
 
 cd /etc/network/
 cp interfaces interfaces.old
@@ -30,10 +30,10 @@ address 192.168.0.1/24
 
 salvar e reiniciar o serviço de rede (systemctl restart networking)
 
-_______________________________________________________
-configuração do serviço DHCP:
-
-apt update
+_____________________________________________________________________________________________________________________________________________________________________________
+configuração do serviço DHCP:                                             
+                                                                          
+apt update                                                               
 apt install isc-dhcp-server
 ip link show (verificar interfaces de rede)
 
@@ -58,6 +58,33 @@ Linha 36 - alterar o jante (quantos ip disponiveis)
 Linha 37 - alterar option routers para o ip
 
 OBS == TOMAR CUIDADO COM PARENTESES, PONTO, VIRGULA E CHAVES
+
+_____________________________________________________________________________________________________________________________________________________________________________
+ATIVAR SSH
+
+(No debian por padrão apenas usuários podem se conectar remotamente no servidor)
+
+putty -> ip do servidor (192.168.0.1) com o usuario
+autenticar com o usuario 
+digitar o comando SU para ter os privilegios de root
+_____________________________________________________________________________________________________________________________________________________________________________
+DNS (Domain name server)
+
+apt install dnsmasq
+systemctl status dnsmasq
+cd /etc
+ls dnsmasq*
+mv dnsmasq.conf dnsmasq.conf.old
+vim dnsmasq.conf
+_____________________________________________________________________________________________________________________________________________________________________________
+FireWall
+NETFILTER (configurações)
+
+cs /etc
+Arquivo de configuração dos modulos netfilter(firewall)
+cp sysctl.conf sysctl.conf.old
+
+
 
 
 
