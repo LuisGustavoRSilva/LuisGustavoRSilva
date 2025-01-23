@@ -185,3 +185,135 @@ if __name__ == "__main__":
     janela = MainWindow()
     janela.show()
     sys.exit(app.exec_())
+
+
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QLineEdit, QStackedWidget, QWidget, QVBoxLayout, QHBoxLayout
+import sys
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Janela com 4 Telas e Conteúdo")
+        self.setGeometry(100, 100, 400, 300)
+
+        # Criar o widget empilhado (QStackedWidget) para alternar as telas
+        self.stack = QStackedWidget()
+        self.setCentralWidget(self.stack)
+
+        # Adicionar as 4 telas
+        self.tela1 = self.criar_tela1()
+        self.tela2 = self.criar_tela2()
+        self.tela3 = self.criar_tela3()
+        self.tela4 = self.criar_tela4()
+
+        self.stack.addWidget(self.tela1)
+        self.stack.addWidget(self.tela2)
+        self.stack.addWidget(self.tela3)
+        self.stack.addWidget(self.tela4)
+
+        # Definir a tela inicial
+        self.stack.setCurrentWidget(self.tela1)
+
+    def criar_tela1(self):
+        tela = QWidget()
+        layout = QVBoxLayout()
+
+        label = QLabel("Bem-vindo à Tela 1!")
+        layout.addWidget(label)
+
+        botao = QPushButton("Ir para Tela 2")
+        botao.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela2))
+        layout.addWidget(botao)
+
+        tela.setLayout(layout)
+        return tela
+
+    def criar_tela2(self):
+        tela = QWidget()
+        layout = QVBoxLayout()
+
+        label = QLabel("Esta é a Tela 2. Insira seu nome abaixo:")
+        layout.addWidget(label)
+
+        entrada = QLineEdit()
+        entrada.setPlaceholderText("Digite seu nome aqui")
+        layout.addWidget(entrada)
+
+        botao_voltar = QPushButton("Voltar para Tela 1")
+        botao_voltar.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela1))
+        layout.addWidget(botao_voltar)
+
+        botao_proximo = QPushButton("Ir para Tela 3")
+        botao_proximo.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela3))
+        layout.addWidget(botao_proximo)
+
+        tela.setLayout(layout)
+        return tela
+
+    def criar_tela3(self):
+        tela = QWidget()
+        layout = QVBoxLayout()
+
+        label = QLabel("Você está na Tela 3. Escolha uma opção:")
+        layout.addWidget(label)
+
+        botao_opcao1 = QPushButton("Opção 1")
+        botao_opcao1.clicked.connect(lambda: print("Você escolheu Opção 1"))
+        layout.addWidget(botao_opcao1)
+
+        botao_opcao2 = QPushButton("Opção 2")
+        botao_opcao2.clicked.connect(lambda: print("Você escolheu Opção 2"))
+        layout.addWidget(botao_opcao2)
+
+        botao_voltar = QPushButton("Voltar para Tela 2")
+        botao_voltar.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela2))
+        layout.addWidget(botao_voltar)
+
+        botao_proximo = QPushButton("Ir para Tela 4")
+        botao_proximo.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela4))
+        layout.addWidget(botao_proximo)
+
+        tela.setLayout(layout)
+        return tela
+
+    def criar_tela4(self):
+        tela = QWidget()
+        layout = QVBoxLayout()
+
+        label = QLabel("Parabéns! Você chegou à Tela 4.")
+        layout.addWidget(label)
+
+        botao_voltar = QPushButton("Voltar para Tela 3")
+        botao_voltar.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela3))
+        layout.addWidget(botao_voltar)
+
+        botao_reiniciar = QPushButton("Voltar para Tela 1")
+        botao_reiniciar.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela1))
+        layout.addWidget(botao_reiniciar)
+
+        tela.setLayout(layout)
+        return tela
+
+# Executar a aplicação
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    janela = MainWindow()
+    janela.show()
+    sys.exit(app.exec_())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
