@@ -28,6 +28,75 @@ class MainWindow(QMainWindow):
         layout1.addWidget(botao_tela2)
         self.tela1.setLayout(layout1)
 
+
+
+
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QStackedWidget, QWidget, QVBoxLayout
+import sys
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Mudar de Tela - PyQt5 com 4 telas")
+        self.setGeometry(100, 100, 400, 300)
+
+        # Criar o widget empilhado (Stacked Widget)
+        self.stack = QStackedWidget()
+        self.setCentralWidget(self.stack)
+
+        # Tela 1
+        self.tela1 = QWidget()
+        layout1 = QVBoxLayout()
+        layout1.addWidget(QLabel("Esta é a Tela 1"))
+        botao_tela2 = QPushButton("Ir para Tela 2")
+        botao_tela2.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela2))
+        layout1.addWidget(botao_tela2)
+        self.tela1.setLayout(layout1)
+
+        # Tela 2
+        self.tela2 = QWidget()
+        layout2 = QVBoxLayout()
+        layout2.addWidget(QLabel("Esta é a Tela 2"))
+        botao_tela3 = QPushButton("Ir para Tela 3")
+        botao_tela3.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela3))
+        layout2.addWidget(botao_tela3)
+        self.tela2.setLayout(layout2)
+
+        # Tela 3
+        self.tela3 = QWidget()
+        layout3 = QVBoxLayout()
+        layout3.addWidget(QLabel("Esta é a Tela 3"))
+        botao_tela4 = QPushButton("Ir para Tela 4")
+        botao_tela4.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela4))
+        layout3.addWidget(botao_tela4)
+        self.tela3.setLayout(layout3)
+
+        # Tela 4
+        self.tela4 = QWidget()
+        layout4 = QVBoxLayout()
+        layout4.addWidget(QLabel("Esta é a Tela 4"))
+        botao_tela1 = QPushButton("Voltar para Tela 1")
+        botao_tela1.clicked.connect(lambda: self.stack.setCurrentWidget(self.tela1))
+        layout4.addWidget(botao_tela1)
+        self.tela4.setLayout(layout4)
+
+        # Adicionar as telas ao widget empilhado
+        self.stack.addWidget(self.tela1)
+        self.stack.addWidget(self.tela2)
+        self.stack.addWidget(self.tela3)
+        self.stack.addWidget(self.tela4)
+
+        # Exibir a tela inicial
+        self.stack.setCurrentWidget(self.tela1)
+
+# Configuração da aplicação
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    janela = MainWindow()
+    janela.show()
+    sys.exit(app.exec_())
+
+
         # Tela 2
         self.tela2 = QWidget()
         layout2 = QVBoxLayout()
