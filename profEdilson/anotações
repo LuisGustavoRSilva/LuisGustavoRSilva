@@ -119,3 +119,69 @@ if __name__ == "__main__":
     janela = MainWindow()
     janela.show()
     sys.exit(app.exec_())
+
+
+
+
+
+
+
+
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QStackedWidget, QWidget, QVBoxLayout
+import sys
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Aplicação com 4 Telas")
+        self.setGeometry(100, 100, 400, 300)
+
+        # Criar o widget empilhado (QStackedWidget) para alternar as telas
+        self.stack = QStackedWidget()
+        self.setCentralWidget(self.stack)
+
+        # Criar as telas
+        self.tela1 = self.criar_tela("Tela 1", "Ir para Tela 2", lambda: self.stack.setCurrentWidget(self.tela2))
+        self.tela2 = self.criar_tela("Tela 2", "Ir para Tela 3", lambda: self.stack.setCurrentWidget(self.tela3), "Voltar para Tela 1", lambda: self.stack.setCurrentWidget(self.tela1))
+        self.tela3 = self.criar_tela("Tela 3", "Ir para Tela 4", lambda: self.stack.setCurrentWidget(self.tela4), "Voltar para Tela 2", lambda: self.stack.setCurrentWidget(self.tela2))
+        self.tela4 = self.criar_tela("Tela 4", "Voltar para Tela 1", lambda: self.stack.setCurrentWidget(self.tela1), "Voltar para Tela 3", lambda: self.stack.setCurrentWidget(self.tela3))
+
+        # Adicionar as telas ao widget empilhado
+        self.stack.addWidget(self.tela1)
+        self.stack.addWidget(self.tela2)
+        self.stack.addWidget(self.tela3)
+        self.stack.addWidget(self.tela4)
+
+        # Definir a tela inicial
+        self.stack.setCurrentWidget(self.tela1)
+
+    def criar_tela(self, texto, botao_proximo_texto, botao_proximo_acao, botao_anterior_texto=None, botao_anterior_acao=None):
+        """
+        Cria uma tela com um rótulo (texto) e botões de navegação.
+        """
+        tela = QWidget()
+        layout = QVBoxLayout()
+
+        # Adiciona um rótulo
+        layout.addWidget(QLabel(texto))
+
+        # Adiciona botão para próxima tela
+        botao_proximo = QPushButton(botao_proximo_texto)
+        botao_proximo.clicked.connect(botao_proximo_acao)
+        layout.addWidget(botao_proximo)
+
+        # Adiciona botão para tela anterior (se existir)
+        if botao_anterior_texto and botao_anterior_acao:
+            botao_anterior = QPushButton(botao_anterior_texto)
+            botao_anterior.clicked.connect(botao_anterior_acao)
+            layout.addWidget(botao_anterior)
+
+        tela.setLayout(layout)
+        return tela
+
+# Executar a aplicação
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    janela = MainWindow()
+    janela.show()
+    sys.exit(app.exec_())
